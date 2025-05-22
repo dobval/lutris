@@ -20,7 +20,7 @@ def search_game(name):
     return results[0] if results else None
 
 
-def get_cover_url(game_id):
+def get_cover_url(game_id): # Suggestion: get animated covers (types=ImageType.Animated)
     """Fetch the first cover URL (static image) for a given game_id"""
     covers = _client.get_grids_by_gameid(
         game_ids=[game_id],       
